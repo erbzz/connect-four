@@ -11,9 +11,7 @@ const Cell: React.FC<Props> = ({ cell }) => {
   const dispatch = useDispatch();
 
   const handleClick = () => {
-    if (cell.player === null) {
       dispatch(placePiece(cell.col));
-    }
   };
 
   return (
